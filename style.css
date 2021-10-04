@@ -1,0 +1,153 @@
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: hsl(229, 23%, 23%);
+  position: relative;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  width: 37.5rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+  align-content: center;
+}
+
+.header-bg-img {
+  height: 14rem;
+  background-image: url("/images/bg-pattern-card.svg");
+  text-align: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  border: 5px solid hsl(0, 0%, 100%);
+  transform: translateY(9rem);
+}
+
+.profile {
+  text-align: center;
+  margin: 8rem 0 3rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.profile-name,
+.social-num {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.age {
+  color: hsl(227, 10%, 46%);
+  margin-left: 1rem;
+}
+
+.social {
+  border-top: 1px solid hsl(0, 0%, 59%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1rem;
+  padding: 2.5rem;
+}
+
+.name,
+.city {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.city {
+  font-size: 1.6rem;
+}
+
+.name {
+  font-size: 1.2rem;
+}
+
+.top-circle {
+  position: absolute;
+  top: -30rem;
+  left: -10rem;
+  background-image: url("/images/bg-pattern-top.svg");
+  width: 97.8rem;
+  height: 97.8rem;
+  z-index: -1;
+}
+
+.bottom-circle {
+  position: absolute;
+  bottom: -30rem;
+  right: -10rem;
+  background-image: url("/images/bg-pattern-bottom.svg");
+  width: 97.8rem;
+  height: 97.8rem;
+  z-index: -1;
+}
+
+.attribution {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 37.5rem) {
+  .card {
+    width: 35rem;
+  }
+}
