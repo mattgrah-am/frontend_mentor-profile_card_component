@@ -66,7 +66,7 @@ body {
 
 .header-bg-img {
   height: 14rem;
-  background-image: url("/images/bg-pattern-card.svg");
+  background-image: url("./images/bg-pattern-card.svg");
   text-align: center;
 }
 
@@ -121,7 +121,7 @@ body {
   position: absolute;
   top: -30rem;
   left: -10rem;
-  background-image: url("/images/bg-pattern-top.svg");
+  background-image: url("./images/bg-pattern-top.svg");
   width: 97.8rem;
   height: 97.8rem;
   z-index: -1;
@@ -131,7 +131,7 @@ body {
   position: absolute;
   bottom: -30rem;
   right: -10rem;
-  background-image: url("/images/bg-pattern-bottom.svg");
+  background-image: url("./images/bg-pattern-bottom.svg");
   width: 97.8rem;
   height: 97.8rem;
   z-index: -1;
